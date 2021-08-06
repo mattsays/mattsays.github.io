@@ -1,0 +1,55 @@
+theme = "showfolio"
+languageCode = "en-us"
+baseurl = "https://www.mattsays.tech"
+title = "Mattia Sicoli - Portfolio"
+
+[params]
+  name = "Mattia Sicoli - Portfolio"
+  description = "A portfolio from a future university student"
+  author = "Mattia Sicoli"
+  authorEmail = "mattia.sicoli@mattsays.tech"
+  authorImage = "/profile.png"
+  autoDarkMode = true
+
+  copyright = "Copyright © 2021 - Mattia Sicoli · All rights reserved"
+  favicon = "favicon.ico"
+
+[params.homepage]
+  title = "Hello 👋 I'm Mattia Sicoli"
+  tagline = "(future) Computer Engineering student at Politecnico di Milano"
+  description = "18yr old technology passionate"
+  contact = "https://twitter.com/MattiaSicoli"
+
+[params.homepage.resume]
+  skills = ["Java software development", "Telegram bot development", "Arduino development", "Little knownledge of Fusion360", "OpenGL development"]
+
+[[params.homepage.resume.work]]
+  name = "National Institute of Nuclear Physics"
+  role = "Young apprenticeship programme"
+  duration = "Feb 2020 - June 2020"
+
+[[params.homepage.resume.courses]]
+  name = "CyberChallenge course and competitions"
+  provider = "CINI"
+  duration = "Feb 2020 - Sep 2020"
+
+[[params.homepage.resume.courses]]
+  name = "Introduction to computer communications"
+  provider = "PoliCollege @ PoliMI"
+  duration = "Feb 2020 - Sep 2020"
+
+
+[params.homepage.social]
+  twitter = "https://twitter.com/MattiaSicoli"
+  linkedin = "https://www.linkedin.com/in/mattia-sicoli-640a24199/"
+  github = "https://github.com/MattSays"
+  reddit = "https://reddit.com/user/MattSaysProgrammer"
+
+[build]
+  writeStats = false
+  publishDir = "../mattsays.github.io"
+
+# syntax highlight settings
+[markup]
+  [markup.highlight]
+    style = "dracula"
