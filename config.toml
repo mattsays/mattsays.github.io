@@ -1,13 +1,13 @@
 theme = "showfolio"
 languageCode = "en-us"
-baseurl = "https://www.mattsays.tech"
+baseurl = "https://mattsays.github.io"
 title = "Mattia Sicoli - Portfolio"
 
 [params]
   name = "Mattia Sicoli - Portfolio"
   description = "A portfolio from a future university student"
   author = "Mattia Sicoli"
-  authorEmail = "mattia.sicoli@mattsays.tech"
+  authorEmail = "mattia.sicoli@gmail.com"
   authorImage = "/profile.png"
   autoDarkMode = true
 
