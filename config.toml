@@ -1,6 +1,6 @@
 theme = "showfolio"
 languageCode = "en-us"
-baseurl = "https://mattsays.github.io"
+baseurl = "https://www.mattsays.tech"
 title = "Mattia Sicoli - Portfolio"
 
 [params]
