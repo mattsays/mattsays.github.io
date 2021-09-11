@@ -45,9 +45,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-node-
 
-    - run: cd themes/showfolio
     - run: npm ci
-    - run: cd ../..
 
     # Step 3 - Clean and don't fail
     - name: Clean public directory
