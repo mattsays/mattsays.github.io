@@ -31,6 +31,7 @@ jobs:
       uses: peaceiris/actions-hugo@v2
       with:
           hugo-version: 'latest'
+          extended: true
 
     - name: Setup Node
       uses: actions/setup-node@v2
@@ -46,6 +47,7 @@ jobs:
           ${{ runner.os }}-node-
 
     - run: npm ci
+    - run: npm install themes/showfolio
 
     # Step 3 - Clean and don't fail
     - name: Clean public directory
@@ -53,7 +55,7 @@ jobs:
 
     # Step 4 - Builds the site using the latest version of Hugo
     - name: Build
-      run: hugo --minify
+      run: hugo
 
     # Step 5 - Create name file
     - name: Create cname file
