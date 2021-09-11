@@ -58,7 +58,7 @@ jobs:
 
     # Step 5 - Create name file
     - name: Create cname file
-      run: echo 'mattsays.tech' > public/CNAME
+      run: echo 'www.mattsays.tech' > public/CNAME
 
     # Step 6 - Push our generated site to our gh-pages branch
     - name: Deploy
