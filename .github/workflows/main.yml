@@ -28,13 +28,24 @@ jobs:
 
     # Step 2 - Sets up the latest version of Hugo
     - name: Setup Hugo
-      uses: actions/setup-node@v2
-      with:
-          node-version: '14'
-    - run: npm install -g postcss-cli
       uses: peaceiris/actions-hugo@v2
       with:
           hugo-version: 'latest'
+
+    - name: Setup Node
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Cache dependencies
+      uses: actions/cache@v1
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - run: npm ci
 
     # Step 3 - Clean and don't fail
     - name: Clean public directory
@@ -42,7 +53,7 @@ jobs:
 
     # Step 4 - Builds the site using the latest version of Hugo
     - name: Build
-      run: hugo
+      run: hugo --minify
 
     # Step 5 - Create name file
     - name: Create cname file
