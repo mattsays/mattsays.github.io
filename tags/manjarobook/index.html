@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    manjarobook - Mattia Sicoli - Portfolio
+  </title><meta name="generator" content="Hugo 0.88.1" /><link
+    rel="stylesheet"
+    href="https://www.mattsays.tech/css/styles.min.8ab49f81afb417dd724de86d24568d8e76e3416ac337e545c09a7ef837545209.css"
+    integrity="sha256-irSfga+0F91yTehtJFaNjnbjQWrDN+VFwJp++DdUUgk="
+  />
+  
+  <script>
+    
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  </script>
+  
+</head>
+
+  <body
+    class="flex flex-col min-h-screen dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500"
+  ><header class="w-full px-4 pt-4 max-w-5xl mx-auto">
+  <nav class="flex items-center justify-between flex-wrap">
+    <div class="flex gap-2 items-center">
+      
+      <a href="mailto:mattia.sicoli@gmail.com" aria-label="EMail">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="4" />
+          <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28" />
+        </svg>
+      </a>
+      
+      <a href="https://www.mattsays.tech/" class="flex items-center font-bold">
+        Mattia Sicoli - Portfolio
+      </a>
+    </div>
+
+    <ul id="nav-menu" class="flex w-auto mt-0 space-x-2">
+      
+      <li>
+        <a href="https://www.mattsays.tech/about/" class="hover:text-blue-800 dark:hover:text-blue-300">About Me</a>
+      </li>
+      
+      
+      <li>
+        <a href="https://www.mattsays.tech/blog/" class="hover:text-blue-800 dark:hover:text-blue-300">Blog</a>
+      </li>
+      
+    </ul>
+  </nav>
+</header>
+<main class="flex-1 mx-4 md:mx-12 lg:mx-24 mt-8 sm:mt-16"> 
+<article class="sm:mx-12 mb-16 prose lg:prose-lg">
+  <h1><a href="https://www.mattsays.tech/blog/manjarobook/">ManjaroBook</a></h1>
+  <h2 id="how-the-journey-started">How the journey started</h2>
+<p><img src="/manjaro_book/manjaro_view.png" alt="ManjaroBook"></p>
+<p>One of my favorite Linux distros overall is without any doubt <em><a href="https://manjaro.org/">Manjaro</a></em>, a Linux distribution which derivates from ArchLinux.</p>
+<p>Some days ago, annoyed by the <strong>restricted Apple macOS</strong>, I decided to install <strong>Manjaro on my MacBook Pro 13' 2017 base model</strong>. This decision was also made because of the continuous and loud sound of the fan; Yes fan and not fans because this particular model has only one fan to cool down the entire computer.</p>
+<h2 id="preliminary-steps">Preliminary Steps</h2>
+<p>Before actually starting installing Manjaro, I had to do a few preliminary steps:</p>
+<ul>
+<li>Installing a new boot manager for dual booting with macOS and to properly start all hardware internal components.</li>
+<li>Get an external storage to install Manjaro into it (This could be seen as an easy step, but it&rsquo;s not 😂).</li>
+<li>Search useful resources to start diving into the <code>linux on macbook pro</code> world.</li>
+</ul>
+<h3 id="installing-a-new-boot-manager-refind">Installing a new boot manager: rEFInd</h3>
+<p>As the title suggests, <code>rEFInd</code> is a really cool boot manager, not only used in Apple systems but also used in usual pc systems.</p>
+<p>It is very easy to install; You just have to follow this <a href="https://www.rodsbooks.com/refind/installing.html#installsh">guide</a> that makes you install rEFInd with a handy script. What this script basically does is creating a new folder called <code>refind</code> in an EFI partition called <code>ESP</code> in your main Macintosh drive which contains all the necessary files.</p>
+<h3 id="finding-a-drive-for-manjaro">Finding a drive for Manjaro</h3>
+<p>This step as I said could be undervalued. In my case, at first, I was using a WesternDigital Passport SSD. It is an external USB-C drive which should work without any big issues. And yeah, that&rsquo;s what I thought. However, Linux is sometimes weird, and It can&rsquo;t use my SSD for starting up Manjaro.<br>
+Well, actually, this issue happens only when starting a Linux distro that runs kernel version 5.12 or later.<br>
+I discovered this by trying to install other distros like Fedora or Ubuntu. These distros have in common that use earlier kernel versions.<br>
+So in the end I had to not use my WesternDigital SSD and rely on a <a href="https://letmegooglethat.com/?q=samsung+ssd+850+evo">Samsung SSD with 512 GB of storage</a>.</p>
+<h3 id="a-useful-resource-for-macbook-linux-users">A useful resource for MacBook Linux users</h3>
+<p>In order to find all the required drivers and modules to make Apple hardware work with Linux.
+Luckily, there is a complete guide to do so on <a href="https://github.com/Dunedan/mbp-2016-linux">GitHub</a> thanks to a guy called Dunedan.</p>
+<h3 id="actual-distro-installation">Actual distro installation</h3>
+<p>Now that everything has been set, I could start flashing my USB stick with a fresh new Manjaro installation image.</p>
+<p>After that, using rEFInd I booted into the installation system</p>
+<p><img src="/manjaro_book/refind.jpeg" alt="rEFInd"></p>
+<p>Hopefully, It starts without any problem like has happened to me.</p>
+<blockquote>
+<ul>
+<li>Older MacBooks may require additional parameters to make it boot.</li>
+</ul>
+</blockquote>
+<p>After doing the first configuration steps when reaching the installation drive step, I had to not just use the <code>Erase Disk</code> method. I chose the custom partitioning option.</p>
+<p>Choosing that option means that you have to create all the necessary partitions by yourself.
+So I made the following ones:</p>
+<ul>
+<li>An <em>fat32</em> EFI partition. This one in particular needs to be mounted on &lsquo;<strong>/boot</strong>&rsquo; instead of &lsquo;<em>/boot/efi</em> ' and needs the <code>boot</code> flag</li>
+<li>An <em>ext4</em> partition mounted on &lsquo;<strong>/</strong>&rsquo;</li>
+<li>A <em>linuxswap</em> partition with no hibernation because currently Linux on MacBook doesn&rsquo;t allow a satisfying <a href="https://github.com/Dunedan/mbp-2016-linux#suspend--hibernation">suspend/resume functionality</a></li>
+</ul>
+<p>After this partition setup, I just followed the installation process and when it finished, I had to label my EFI partition by doing:</p>
+<pre tabindex="0"><code>fatlabel /dev/your_boot_partition MANJARO
+</code></pre><p>Finally, before being able to start our freshly new Linux distro, I had to modify rEFInd, so it has a custom new boot entry that can start Manjaro correctly.</p>
+<p>To do that, You just have to find the correct partition name by executing <code>blkid</code> and it should show you a device called <code>/dev/nvme0n1p1</code> or something like that. This is our refind partition. To mount it, just type:</p>
+<pre tabindex="0"><code>mkdir /mnt/APPLE_EFI
+mount /dev/nvme0n1p1 /mnt/APPLE_EFI
+</code></pre><p>After that, Modify the file <code>refind.conf</code> situated in <code>/mnt/APPLE_EFI/EFI/refind/</code> and add this entry:</p>
+<pre tabindex="0"><code>menuentry &quot;Manjaro&quot; {
+    icon     /EFI/refind/icons/os_manjaro.png
+    volume   &quot;MANJARO&quot;
+    loader   /vmlinuz-5.13-x86_64
+    initrd   /initramfs-5.13-x86_64.img
+    options  &quot;root=PARTUUID=YOUR_ROOT_PARTITION_UUID resume=PARTUUID=YOUR_SWAP_PARTITION_UUID rw add_efi_memmap&quot;
+    submenuentry &quot;Boot using fallback initramfs&quot; {
+        initrd /boot/initramfs-5.13-x86_64-fallback.img
+    }
+    submenuentry &quot;Boot to terminal&quot; {
+        add_options &quot;systemd.unit=multi-user.target&quot;
+    }
+}
+</code></pre><p>Replace <em>YOUR_ROOT_PARTITION_UUID</em> and <em>YOUR_SWAP_PARTITION_UUID</em> with your partition&rsquo;s UUIDs found by executing <code>blkid</code></p>
+<p>I also changed some settings situated in the same file:</p>
+<pre tabindex="0"><code>enable_mouse # This just to be able to easily move in the menu
+spoof_osx_version 10.9 # We need to make sure that our mac thinks we are booting into macOs
+</code></pre><p>Now we should be all set and can hopefully boot our Manjaro installation. Just reboot your system, remove your USB stick, and a menu entry called &ldquo;Manjaro&rdquo; should appear.</p>
+<blockquote>
+<ul>
+<li>Make sure to not boot from the kernel directly, just use our custom menu entry because avoiding doing that, It will boot a Linux kernel without providing the necessary boot and swap partition&rsquo;s UUIDs.</li>
+</ul>
+</blockquote>
+<p><img src="/manjaro_book/manjaro_installation_complete.png" alt="Manjaro installation completed"></p>
+<h3 id="post-install-configurations">Post install configurations</h3>
+<p>Hooray, you have finally booted your so much desired distro Manjaro!</p>
+<p>But, hey, you have some more work to do 🥲.<br>
+You have to install some additional drivers that may not be included in your Manjaro installation.
+In my case, MacBook keyboard and touchpad, Wi-Fi, graphics, etc. are working out of the box.
+The things that were not working, were: Sound input and output, Bluetooth, FaceTime camera and suspend/resume functionality.</p>
+<h4 id="sound">Sound</h4>
+<p>To make sound working following the guide provided by Dunedan, I had to just install <a href="https://github.com/davidjo/snd_hda_macbookpro">this driver</a>.
+And after a reboot, only sound output worked because as Dunedan said in the guide:</p>
+<blockquote>
+<p>With the MacBookPro14,1 the internal audio output is working, however the internal audio input is not working.</p>
+</blockquote>
+<p>Despite this issue, I am satisfied because I use an external Samson Meteor Microphone as my default sound input device.</p>
+<h4 id="bluetooth">Bluetooth</h4>
+<p>Also, Bluetooth required the installation of a <a href="https://github.com/leifliddy/macbook12-bluetooth-driver">driver</a> and after another reboot everything worked correctly</p>
+<h4 id="facetime-camera">FaceTime camera</h4>
+<p>This one also required another <a href="https://github.com/patjak/bcwc_pcie/wiki/Installation#get-started-on-arch">driver</a> that can be installed without any problem.</p>
+<p>This one doesn&rsquo;t require any git clone or so ever; I had to just install it with <code>pacman</code>.</p>
+<h4 id="resumesuspend">Resume/suspend</h4>
+<p>Unfortunately, this isn&rsquo;t working for almost every MacBook. I&rsquo;ve tried to do:</p>
+<pre tabindex="0"><code>echo 0 &gt; /sys/bus/pci/devices/0000\:01\:00.0/d3cold_allowed
+</code></pre><p>But it didn&rsquo;t work, maybe will work for you. It should be executed at every startup.</p>
+<h3 id="bonus-fans">Bonus: fans</h3>
+<p>The one of the reasons I wanted to switch to Manjaro is also a better fans management system. However, right now there is only this <a href="https://github.com/linux-on-mac/mbpfan#arch-linux">software</a> that adjusts fans speed based on the temperature of the CPU. It works good for doing not very intensive tasks, but when you use more programs at once like IntelliJ IDEA and other programs, CPU Frequency is stuck at 400mhz. This is because MacBook internal systems also not only checks for internal CPU temperature to make it work at full power, it also checks for other temperatures values that can be found in <code>/sys/devices/platform/applesmc.768</code>.<br>
+So to solve this issue I am thinking of making a new software in rust that can solve this issue. In this way, I can also learn a new programming language and learn new stuff 😁.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>After doing all of these steps, you will be able to enjoy the beauty of the Linux world and specifically the beauty of the ArchLinux world 😚.</p>
+<p>I decided to write this article to encourage everyone who is trying to install Linux on their MacBook. Before actually started booting Manjaro without any problems I had to struggle a lot and figure out some weird problems like the SSD one, but after all I am proud of what I have done! 🎊🎊🎊</p>
+
+</article>
+ 
+    </main><footer class="w-full text-center p-4 text-xs text-gray-400">
+  <p>
+    Built with
+    <a
+      href="https://gohugo.io"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="underline hover:text-blue-800 dark:hover:text-blue-300"
+      >Hugo</a
+    >
+    and
+    <a
+      href="https://github.com/apvarun/showcase-hugo-theme"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="underline hover:text-blue-800 dark:hover:text-blue-300"
+      >Showfolio</a
+    >
+  </p>
+</footer>
+
+</body>
+</html>

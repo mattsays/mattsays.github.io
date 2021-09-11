@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Mattia Sicoli - Portfolio</title>
+    <link>https://www.mattsays.tech/tags/</link>
+    <description>Recent content in Tags on Mattia Sicoli - Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.mattsays.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>apple</title>
+      <link>https://www.mattsays.tech/tags/apple/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mattsays.tech/tags/apple/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://www.mattsays.tech/tags/linux/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mattsays.tech/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux-on-macbook</title>
+      <link>https://www.mattsays.tech/tags/linux-on-macbook/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mattsays.tech/tags/linux-on-macbook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>macbook-pro</title>
+      <link>https://www.mattsays.tech/tags/macbook-pro/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mattsays.tech/tags/macbook-pro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>manjaro</title>
+      <link>https://www.mattsays.tech/tags/manjaro/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mattsays.tech/tags/manjaro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>manjarobook</title>
+      <link>https://www.mattsays.tech/tags/manjarobook/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.mattsays.tech/tags/manjarobook/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
