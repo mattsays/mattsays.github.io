@@ -31,8 +31,8 @@ It is very easy to install; You just have to follow this [guide](https://www.rod
 
 This step as I said could be undervalued. In my case, at first, I was using a WesternDigital Passport SSD. It is an external USB-C drive which should work without any big issues. And yeah, that's what I thought. However, Linux is sometimes weird, and It can't use my SSD for starting up Manjaro.  
 Well, actually, this issue happens only when starting a Linux distro that runs kernel version 5.12 or later.   
-I discovered this by trying to install other distros like Fedora or Ubuntu. These distros have in common that use earlier kernel versions.   
-So in the end I had to not use my WesternDigital SSD and rely on a [Samsung SSD with 512 GB of storage](https://letmegooglethat.com/?q=samsung+ssd+850+evo).
+I discovered this by trying to install other distros like Fedora or Ubuntu. These distros have in common that use earlier kernel versions. The problem is related to all USB 3.0 drives, so to get it working you need to use an USB 2.0 device.   
+So in the end I had to not use my WesternDigital SSD and rely on a [Samsung SSD with 512 GB of storage](https://letmegooglethat.com/?q=samsung+ssd+850+evo) via a USB 2.0 cable.
 
 
 ### A useful resource for MacBook Linux users
