@@ -3,3 +3,4 @@ themes/showfolio/package-lock.json
 .DS_Store
 resources
 public
+node_modules
