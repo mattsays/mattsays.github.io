@@ -4,7 +4,7 @@
   "description": "",
   "main": "none",
   "scripts": {
-    "install-deps": "npm install ; npm install themes/showfolio"
+    "install-deps": "npm -g install themes/showfolio"
   },
   "repository": {
     "type": "git",
@@ -16,10 +16,16 @@
     "url": "https://github.com/MattSays/mattsays.github.io-source/issues"
   },
   "homepage": "https://github.com/MattSays/mattsays.github.io-source#readme",
-  "dependencies": {},
+  "dependencies": {
+    "showfolio": "file:themes/showfolio"
+  },
   "devDependencies": {
-    "autoprefixer": "^10.3.4",
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "@tailwindcss/typography": "^0.4.0",
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.10",
     "postcss-cli": "^8.3.1",
-    "postcss": "^8.3.6"
+    "postcss-import": "^14.0.1",
+    "tailwindcss": "^2.1.1"
   }
 }
