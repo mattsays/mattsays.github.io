@@ -4,7 +4,7 @@
   "description": "",
   "main": "none",
   "scripts": {
-    "install-deps": "npm -g install themes/showfolio"
+    "install-deps": "npm -g install ./themes/showfolio"
   },
   "repository": {
     "type": "git",
