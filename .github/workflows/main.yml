@@ -46,8 +46,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-node-
 
-    - run: npm ci
-    - run: npm install themes/showfolio
+    - run: npm run install-deps
 
     # Step 3 - Clean and don't fail
     - name: Clean public directory
