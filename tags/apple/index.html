@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>
     apple - Mattia Sicoli - Portfolio
-  </title><meta name="generator" content="Hugo 0.88.1" /><link
+  </title><meta name="generator" content="Hugo 0.101.0" /><link
     rel="stylesheet"
-    href="https://www.mattsays.tech/css/styles.min.8ab49f81afb417dd724de86d24568d8e76e3416ac337e545c09a7ef837545209.css"
-    integrity="sha256-irSfga+0F91yTehtJFaNjnbjQWrDN+VFwJp++DdUUgk="
+    href="https://www.mattsays.tech/css/styles.min.d47d98d4f02dad055d901de9b56d0d5fd301cc454b37b6c09ac351fe1baa738b.css"
+    integrity="sha256-1H2Y1PAtrQVdkB3ptW0NX9MBzEVLN7bAmsNR/huqc4s="
   />
   
   <script>
@@ -71,7 +71,7 @@
   <h2 id="how-the-journey-started">How the journey started</h2>
 <p><img src="/manjaro_book/manjaro_view.png" alt="ManjaroBook"></p>
 <p>One of my favorite Linux distros overall is without any doubt <em><a href="https://manjaro.org/">Manjaro</a></em>, a Linux distribution which derivates from ArchLinux.</p>
-<p>Some days ago, annoyed by the <strong>restricted Apple macOS</strong>, I decided to install <strong>Manjaro on my MacBook Pro 13' 2017 base model</strong>. This decision was also made because of the continuous and loud sound of the fan; Yes fan and not fans because this particular model has only one fan to cool down the entire computer.</p>
+<p>Some days ago, annoyed by the <strong>restricted Apple macOS</strong>, I decided to install <strong>Manjaro on my MacBook Pro 13&rsquo; 2017 base model</strong>. This decision was also made because of the continuous and loud sound of the fan; Yes fan and not fans because this particular model has only one fan to cool down the entire computer.</p>
 <h2 id="preliminary-steps">Preliminary Steps</h2>
 <p>Before actually starting installing Manjaro, I had to do a few preliminary steps:</p>
 <ul>
@@ -104,7 +104,7 @@ Luckily, there is a complete guide to do so on <a href="https://github.com/Duned
 <p>Choosing that option means that you have to create all the necessary partitions by yourself.
 So I made the following ones:</p>
 <ul>
-<li>An <em>fat32</em> EFI partition. This one in particular needs to be mounted on &lsquo;<strong>/boot</strong>&rsquo; instead of &lsquo;<em>/boot/efi</em> ' and needs the <code>boot</code> flag</li>
+<li>An <em>fat32</em> EFI partition. This one in particular needs to be mounted on &lsquo;<strong>/boot</strong>&rsquo; instead of &lsquo;<em>/boot/efi</em> &rsquo; and needs the <code>boot</code> flag</li>
 <li>An <em>ext4</em> partition mounted on &lsquo;<strong>/</strong>&rsquo;</li>
 <li>A <em>linuxswap</em> partition with no hibernation because currently Linux on MacBook doesn&rsquo;t allow a satisfying <a href="https://github.com/Dunedan/mbp-2016-linux#suspend--hibernation">suspend/resume functionality</a></li>
 </ul>
@@ -115,17 +115,17 @@ So I made the following ones:</p>
 <pre tabindex="0"><code>mkdir /mnt/APPLE_EFI
 mount /dev/nvme0n1p1 /mnt/APPLE_EFI
 </code></pre><p>After that, Modify the file <code>refind.conf</code> situated in <code>/mnt/APPLE_EFI/EFI/refind/</code> and add this entry:</p>
-<pre tabindex="0"><code>menuentry &quot;Manjaro&quot; {
+<pre tabindex="0"><code>menuentry &#34;Manjaro&#34; {
     icon     /EFI/refind/icons/os_manjaro.png
-    volume   &quot;MANJARO&quot;
+    volume   &#34;MANJARO&#34;
     loader   /vmlinuz-5.13-x86_64
     initrd   /initramfs-5.13-x86_64.img
-    options  &quot;root=PARTUUID=YOUR_ROOT_PARTITION_UUID resume=PARTUUID=YOUR_SWAP_PARTITION_UUID rw add_efi_memmap&quot;
-    submenuentry &quot;Boot using fallback initramfs&quot; {
+    options  &#34;root=PARTUUID=YOUR_ROOT_PARTITION_UUID resume=PARTUUID=YOUR_SWAP_PARTITION_UUID rw add_efi_memmap&#34;
+    submenuentry &#34;Boot using fallback initramfs&#34; {
         initrd /boot/initramfs-5.13-x86_64-fallback.img
     }
-    submenuentry &quot;Boot to terminal&quot; {
-        add_options &quot;systemd.unit=multi-user.target&quot;
+    submenuentry &#34;Boot to terminal&#34; {
+        add_options &#34;systemd.unit=multi-user.target&#34;
     }
 }
 </code></pre><p>Replace <em>YOUR_ROOT_PARTITION_UUID</em> and <em>YOUR_SWAP_PARTITION_UUID</em> with your partition&rsquo;s UUIDs found by executing <code>blkid</code></p>
