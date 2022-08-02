@@ -13,8 +13,6 @@ I am a computer and technology passionate who has started learning the magnifice
 
 I am a person who enjoys working in team to achieve big goals. Due to my ambition, I am very competitive and also perfectionist. I also like to work as a leader in teams and learn from other people's prospectives. 
 
-Fun fact: I am have natural [ENTJ](https://www.16personalities.com/entj-personality) personality
-
 # Other passions besides technology
 
 I have other passions like **Sports**, **Phylosophy**, **Space**, **Entrepreneurship** and many more that I will discover in the future.
